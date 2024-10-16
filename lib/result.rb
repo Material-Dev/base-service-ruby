@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+# @param error [Any] added to the errors array
+# @param message [Any] (likey a String) added to the messages array
+# @param data [Any] set as the data attribute
+# @return [Result] success|valid?|failure|errors|messages|data
+#
 class Result
   def initialize(error: nil, message: nil, data: nil)
     add_error(error) if error.present?

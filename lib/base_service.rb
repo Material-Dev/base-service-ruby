@@ -3,8 +3,8 @@
 # just a little base class that other services can inherit from
 # with the benefit that all services are similar.
 # Calling a service looks like: MyService.call(opt1: "foo", opt2: "bar")
-# @returns [Result]
-
+# @return [Result]
+#
 class BaseService
   def self.call(...)
     new(...).call
@@ -25,7 +25,7 @@ class BaseService
   end
 
   def execute
-    raise 'You must implement this method.'
+    raise NotImplementedError, 'You must implement this method.'
   end
 
   private
