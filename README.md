@@ -32,6 +32,6 @@ require 'base_service'
 
 ## Copyright and License
 
-Copyright (c) [2024] [icanmakeitbetter]
+Copyright (c) [2026] [icanmakeitbetter]
 
 This project is licensed under the [MIT License](LICENSE.md).

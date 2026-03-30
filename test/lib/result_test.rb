@@ -56,6 +56,20 @@ class ResultTest < ActiveSupport::TestCase
     end
   end
 
+  context '#set_data' do
+    should 'allow setting data' do
+      data = { key: 'value' }
+      @result.set_data(data)
+      assert_equal(data, @result.data)
+    end
+
+    should 'return self for chaining' do
+      data = { key: 'value' }
+      result = @result.set_data(data)
+      assert_equal(@result, result)
+    end
+  end
+
   context '#to_h' do
     setup do
       @result.add_error('boom')

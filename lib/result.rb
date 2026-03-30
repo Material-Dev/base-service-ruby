@@ -12,13 +12,18 @@ class Result
     @data = data
   end
 
-  attr_accessor :data
+  attr_reader :data
 
   def valid?
     errors.empty?
   end
 
   alias success valid?
+
+  def set_data(data)
+    @data = data
+    self
+  end
 
   def failure
     !success

@@ -8,8 +8,8 @@ class BaseServiceTest < ActiveSupport::TestCase
   end
 
   context '#call' do
-    should 'should raise runtime error when called with no args' do
-      assert_raises(RuntimeError) { @base_service.call }
+    should 'should raise not implemented error when called with no args' do
+      assert_raises(NotImplementedError) { @base_service.call }
     end
   end
 end
