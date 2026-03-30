@@ -12,7 +12,7 @@ class Result
     @data = data
   end
 
-  attr_reader :data
+  attr_accessor :data
 
   def valid?
     errors.empty?
