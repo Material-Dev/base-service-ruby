@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "base-service-ruby"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["icanmakeitbetter"]
   spec.email         = ["dmitry.sychev@materialplus.io"]
   spec.summary       = %q{Base Service Model}
