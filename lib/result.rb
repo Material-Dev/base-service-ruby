@@ -14,6 +14,13 @@ class Result
 
   attr_accessor :data
 
+  def reset
+    @data = nil
+    @errors = nil
+    @messages = nil
+    self
+  end
+
   def valid?
     errors.empty?
   end
